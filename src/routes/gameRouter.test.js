@@ -6,6 +6,8 @@ import * as db from "../database"
 // Prevent writing tests game to filesystem using src/database/__mocks__/index.js implementation
 jest.mock("../database")
 
+// test de commit
+
 // Prevent shuffle for tests
 jest.mock("lodash")
 lodash.shuffle.mockImplementation(x => x)

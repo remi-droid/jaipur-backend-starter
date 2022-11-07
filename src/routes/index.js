@@ -7,6 +7,7 @@ import gameRouter from "./gameRouter"
 const router = express.Router()
 
 router.use("/health", healthRouter)
+
 router.use("/games", gameRouter)
 // Add new routers above
 

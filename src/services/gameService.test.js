@@ -90,6 +90,5 @@ describe("Game service", () => {
     expect(leathers).toEqual(10)
     expect(camels).toEqual(11-3)
     expect(others).toEqual(0)
-    
   })
 })

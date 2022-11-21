@@ -12,4 +12,14 @@ router.post("/", function (req, res) {
   res.status(201).json({ id: newGame.id, name: newGame.name })
 })
 
+
+// Listen to GT /games
+router.get("/", function (req, res) {
+  const games = index.getGames()
+
+  const croppedGames = games.map(game => {return {id:game.id, name:game.name}})
+  res.status(200).json(croppedGames)
+})
+
+
 export default router
